@@ -1,6 +1,7 @@
 import ChapterCounter from "./ex1.js";
 import Timer from "./ex2.js";
 import ChapterAccordion from "./ex3.js";
+import VideoPlayer from "./ex4.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   new ChapterCounter().render();
@@ -9,5 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   timer.start();
 
   const accordion = new ChapterAccordion();
-  accordion.collapseAll(); 
+  accordion.collapseAll();
+
+  const videoPlayer = new VideoPlayer();
 });
